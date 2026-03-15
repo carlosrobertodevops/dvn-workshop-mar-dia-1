@@ -13,7 +13,7 @@ variable "assume_role" {
   })
 
   default = {
-    arn    = "<YOUR_ROLE_ARN>"
+    arn    = "arn:aws:iam::116743944453:role/terraform-role"
     region = "us-east-1"
   }
 }

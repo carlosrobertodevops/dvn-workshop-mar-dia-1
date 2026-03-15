@@ -13,7 +13,7 @@ variable "assume_role" {
   })
 
   default = {
-    arn    = "<YOUR_ROLE_ARN>"
+    arn    = "arn:aws:iam::116743944453:role/terraform-role"
     region = "us-east-1"
   }
 }
@@ -28,7 +28,7 @@ variable "remote_backend" {
   })
 
   default = {
-    s3_bucket_name               = "<YOUR-BUCKET-NAME>"
+    s3_bucket_name               = "workshop-march-state-locking-table-aluno-01"
     dynamodb_table_name          = "workshop-march-state-locking-table"
     dynamodb_table_billing_mode  = "PAY_PER_REQUEST"
     dynamodb_table_hash_key      = "LockID"

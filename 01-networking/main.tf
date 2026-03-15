@@ -7,10 +7,11 @@ terraform {
   }
 
   backend "s3" {
-    bucket       = "<YOUR-BUCKET-NAME>"
+    bucket       = "workshop-march-state-locking-table-aluno-01"
     key          = "networking/terraform.tfstate"
-    region       = "us-east-1"
     use_lockfile = true
+    region       = "us-east-1"
+
     # dynamodb_table = "workshop-march-state-locking-table"
   }
 }
